@@ -21,7 +21,7 @@ hr{
 .contactus_section{
     width: 100%;
     display: flex;
-    background-color: rgb(172, 200, 209);
+    background-color: rgb(192, 226, 238);
     height: 607px;
     flex-direction: row;
     justify-content: center;
@@ -63,10 +63,10 @@ hr{
     vertical-align: middle;
 }
 .info-icon li:nth-child(1){  
-   color: blue;
+    color: rgb(233, 7, 56);
 }
 .info-icon li:nth-child(2){  
-   color: rgb(233, 7, 56);
+    color: rgb(25, 146, 140);
 }
 
 .icon_map{
@@ -88,13 +88,23 @@ hr{
 input{
     width: 260px;
     margin-top: 10px;
-    padding: 10px;
+    padding: 5px;
 }
 textarea{
     width: 525px;
     margin-top: 10px;
     padding: 10px;
 }
+.btn{
+    width: 80px;
+    padding: 10px;
+    background-color: rgb(247, 72, 72);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
 .left_side{
     width: 50%;
 }
@@ -108,4 +118,6 @@ textarea{
     width: 30px;
     margin-top: 10px;
     margin-left: 10px;
+    cursor: pointer;
+
 }

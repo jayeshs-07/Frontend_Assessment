@@ -20,7 +20,7 @@
             </div>
             <div class="address_section">
                 <div class="address">
-                    <p> <span>Address :</span>
+                    <p> <span>ADDRESS :</span>
                         <br>
                         Saint Marco Street 6th <br>
                         floor.T0kY0, Japan. 123466.
@@ -39,16 +39,19 @@
             </div>
             <div class="form_section">
                 <div class="left_side">
-                    <input type="text" placeholder="Name" min="3" max="6">
-                    <input type="text" placeholder="Company">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Mobile" min="0" max="23" step="10">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <form action="#">
+                        <input type="text" placeholder="Name" minlength="3" maxlength="6" required>
+                        <input type="text" placeholder="Company">
+                        <input type="text" placeholder="Email" required>
+                        <input type="text" id="phone"  placeholder="Mobile no" maxlength="10" pattern="[0-9]{10}" required>
+                        <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <input type="submit" value="Send" class="btn">
+                    </form>
                 </div>
                 <div class="right_side">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7343.990922737612!2d72.54836168647557!3d23.02393886137856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84faa5a36071%3A0x9af325a448f09478!2sTops%20Technologies!5e0!3m2!1sen!2sin!4v1702563889192!5m2!1sen!2sin"
-                        width="540" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="540" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                     <div class="social_link">
