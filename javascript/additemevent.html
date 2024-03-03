@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add item event</title>
+
+    <!-- css here -->
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+        .add_list{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        ul{
+            margin: 0;
+            padding: 15px;
+            width: 265px;
+            background-color: white;
+            border-bottom: 2px solid rgb(199, 199, 199);
+        }
+        p{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        li{
+            list-style: none;
+            text-align: left;
+        }
+        input{
+            border-radius: 5px;
+            padding: 15px;
+            border: none;
+        }
+        #additem{
+            background-color: burlywood;
+            padding: 15px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            color: brown;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  -->
+    <div class="add_list">
+        <input type="text" placeholder="Add your item" id="text1" class="text1" />
+        <input type="button" value="Submit" id="additem" />
+    </div>
+    <p id="write"></p>
+
+    <!-- script here -->
+    <script>
+        var submit = document.getElementById("additem");
+        
+        var add = document.getElementById("write");
+
+        submit.addEventListener("click", showlist);
+
+        function showlist() {
+            todo = text1.value;
+            if (todo == "") {
+                alert("Please input data");
+            } else {
+                add.innerHTML += "<ul><li>" + todo + "</li></ul>";
+            }
+        }
+    </script>
+</body>
+
+</html>
